@@ -26,6 +26,4 @@ public class Product {
 
     private Integer stock;
 
-//    @ManyToMany
-//    private List<Order> orders;
 }

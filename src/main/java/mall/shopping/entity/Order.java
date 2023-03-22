@@ -19,8 +19,8 @@ public class Order {
     @JoinColumn(name = "user_id")
     private User user;
 
-//    @ManyToMany
-//    private List<Product> productList;
+    @ManyToMany
+    private List<Product> productList;
 
     private OrderStatus orderStatus;
 
