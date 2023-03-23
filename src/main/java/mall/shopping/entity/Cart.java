@@ -16,12 +16,12 @@ import java.util.List;
 public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final Long id;
+    private Long id;
 
     @OneToOne
     @JoinColumn(name = "user_id")
-    private final User user;
+    private User user;
 
     @ManyToMany
-    private final List<Product> productList;
+    private List<Product> productList;
 }
