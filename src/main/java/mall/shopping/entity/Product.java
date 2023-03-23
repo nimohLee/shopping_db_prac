@@ -1,10 +1,10 @@
 package mall.shopping.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import mall.shopping.enums.CategoryEnum;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Data
@@ -26,4 +26,7 @@ public class Product {
 
     private Integer stock;
 
+    public Product() {
+
+    }
 }
